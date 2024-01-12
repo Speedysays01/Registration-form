@@ -140,6 +140,7 @@ document.getElementById('regbtn').addEventListener('click', function() {
     if (validateInput()) {
         // If the form is valid, refresh the page
         location.reload();
+        alert("Registration successfull! Enter another response");
     } else {
         // If the form is invalid, errors will be shown
         // The page will not refresh

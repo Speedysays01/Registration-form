@@ -112,11 +112,20 @@ button{
 }
 
 
-@media(max-width : 900px)
+/*@media(max-width : 900px)
 {
     .container
     {
         width: calc(100vw - 20vw);
     }
+}*/
+
+@media(max-width : 900px)
+{
+    .container{
+        width: calc(100vw - 5vw);
+        height: 90vh;
+    }
 }
+
 
