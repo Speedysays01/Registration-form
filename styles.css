@@ -6,7 +6,9 @@
 }
 
 body{
-    background-color: rgb(4,4,95);
+    background-color: #3c096c;
+ /*   background-image: url(bg.png);*/
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +23,13 @@ body{
     border-radius: 4px;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 20px 20px 20px ;
 }
 
 .header{
     background-color: #d8d1d1;
     padding: 30px 30px;
+    color: #240046;
 }
 
 .form{
@@ -43,6 +47,7 @@ body{
     margin-bottom:10px;
     font-size: 20px;
     font-weight: bolder;
+    color: #240046;
 }
 
 .form-control input{
@@ -50,12 +55,13 @@ body{
     width: 100%;
     padding: 10px;
     border-radius: 10px;
+    font-weight: bolder;
     border:2px solid #d8d1d1;
 }
 
 .form-control input:focus{
     outline: 0;
-    border-color: blue;
+    border-color: #5a189a;
 }
 
 
@@ -97,7 +103,7 @@ body{
 }
  
 button{
-    background-color: rgb(4,4,95);
+    background-color: #3c096c;
     color:#fff;
     padding: 10px 20px;
     width: 100%;
