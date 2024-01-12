@@ -124,12 +124,15 @@ button{
 {
     .container{
         width: calc(100vw - 10vw);
+        padding-bottom: 0;
         
     }
 
     .form
     {
         padding: 10px 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
