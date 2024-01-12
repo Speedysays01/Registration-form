@@ -104,6 +104,7 @@ button{
     border-radius:10px;
     border:2px solid rgb(4,4,95);
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .header h2{
