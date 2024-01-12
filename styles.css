@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4,4,95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    margin:0;  
+}
+
+.container{
+    width: calc(100vw - 65vw);
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header{
+    background-color: #d8d1d1;
+    padding: 10px 20px;
+}
+
+.form{
+    padding: 20px 40px;
+}
+
+.form-control{
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control lable {
+    display: inline-block;
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:2px solid #d8d1d1;
+}
+
+.form-control input:active
+{
+   border-color: black;
+}
+
+
+.form-control i
+{
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    visibility: hidden;
+}
+
+.form-control.success input
+{
+    border:2px solid rgb(26, 167, 26);
+}
+
+.form-control.success i.fa-circle-check
+{
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error input{
+    border:2px solid rgb(228, 29, 22);
+}
+
+.form-control.error i.fa-circle-exclamation
+{
+    color: red;
+    visibility: visible;
+}
+
+.form-control small{
+    position:absolute;
+    margin: 3px;
+    visibility: hidden;
+}
+ 
+button{
+    background-color: rgb(4,4,95);
+    color:#fff;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius:10px;
+    border:2px solid rgb(4,4,95);
+    cursor: pointer;
+}
+
+.header h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+@media(max-width : 900px)
+{
+    .container
+    {
+        width: calc(100vw - 20vw);
+    }
+}
+
