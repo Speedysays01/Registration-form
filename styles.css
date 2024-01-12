@@ -1,6 +1,8 @@
 
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body{
@@ -10,6 +12,7 @@ body{
     align-items: center;
     min-height: 100vh;  
     margin:0;  
+    font-family: sans-serif;
 }
 
 .container{
@@ -22,11 +25,11 @@ body{
 
 .header{
     background-color: #d8d1d1;
-    padding: 10px 20px;
+    padding: 30px 30px;
 }
 
 .form{
-    padding: 20px 40px;
+    padding: 15px 40px;
 }
 
 .form-control{
@@ -50,9 +53,9 @@ body{
     border:2px solid #d8d1d1;
 }
 
-.form-control input:active
-{
-   border-color: black;
+.form-control input:focus{
+    outline: 0;
+    border-color: blue;
 }
 
 
@@ -89,6 +92,8 @@ body{
     position:absolute;
     margin: 3px;
     visibility: hidden;
+    color: rgb(228, 29, 22);
+    font-weight: bolder;
 }
  
 button{
