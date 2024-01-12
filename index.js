@@ -7,12 +7,13 @@ let number=document.getElementById("number");
 
 function validateInput()
 {
+    var returnval=true;
     //USERNAME
     //check username is empty 
     if(userName.value.trim()==="")
     {
        onError(userName,"User Name cannot be empty");
-       error();
+       returnval=false
     }
     else
     {
@@ -25,12 +26,14 @@ function validateInput()
     if(number.value.trim()==="")
     {
         onError(number,"Phone number cannot be empty");
+        returnval=false;
     }
 
     //checks length
     else if(number.value.length != 10)
     {
         onError(number , "Enter a valid number");
+        returnval=false;
     }
     
     else
@@ -43,6 +46,7 @@ function validateInput()
     if(email.value.trim()==="")
     {
         onError(email,"Email cannot be empty");
+        returnval=false;
     }
     else
     {
@@ -50,6 +54,7 @@ function validateInput()
         if(!isValidEmail(email.value.trim()))
         {
             onError(email,"Email is not valid");
+            returnval=false;
         }
         else
         {
@@ -63,10 +68,12 @@ function validateInput()
     if(pwd.value.trim()==="")
     {
         onError(pwd,"User Name cannot be empty");
+        returnval=false;
      }
      else if(pwd.valuelength < 4)
      {
         onError(pwd , "Password should be at least 4 characters");
+        returnval=false;
      }
      else
      {
@@ -78,16 +85,21 @@ function validateInput()
      if(conPwd.value.trim()==="")
      {
         onError(conPwd,"User Name cannot be empty");
+        returnval=false;
      }
      else
      {
          if(pwd.value.trim()!==conPwd.value.trim())
          {
             onError(conPwd,"Password & Confirm password not matching");
+            returnval=false;
          }
          else
          onSuccess(conPwd);
      }
+
+     return returnval;
+  
 }
 
 
@@ -122,8 +134,21 @@ function isValidEmail(email){
    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-function error()
-{
-    let no = getElementById("no");
-    no.style.visibility="visible";
-}
+
+
+document.getElementById('regbtn').addEventListener('click', function() {
+    if (validateInput()) {
+        // If the form is valid, refresh the page
+        location.reload();
+    } else {
+        // If the form is invalid, errors will be shown
+        // The page will not refresh
+    }
+});
+
+
+
+
+
+
+
