@@ -123,7 +123,7 @@ button{
 @media(max-width : 900px)
 {
     .container{
-        width: calc(100vw - 10vw);
+        width: calc(100vw - 15vw);
         padding-bottom: 0;
         
     }
