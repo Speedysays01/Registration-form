@@ -15,9 +15,14 @@ function validateInput()
        onError(userName,"User Name cannot be empty");
        returnval=false
     }
+    else if(userName.value.length  < 3)
+    {
+        onError(userName , "Enter at least three characters");
+    }
     else
     {
         onSuccess(userName);
+
     }
     
 
@@ -67,7 +72,7 @@ function validateInput()
     //password
     if(pwd.value.trim()==="")
     {
-        onError(pwd,"User Name cannot be empty");
+        onError(pwd,"Password cannot be empty");
         returnval=false;
      }
      else if(pwd.valuelength < 4)

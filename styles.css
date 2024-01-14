@@ -50,7 +50,8 @@ body{
     color: #240046;
 }
 
-.form-control input{
+.form-control input
+{
     display: block;
     width: 100%;
     padding: 10px;
@@ -59,7 +60,8 @@ body{
     border:2px solid #d8d1d1;
 }
 
-.form-control input:focus{
+.form-control input:focus
+{
     outline: 0;
     border-color: #5a189a;
 }
@@ -111,8 +113,19 @@ button{
     border:2px solid rgb(4,4,95);
     cursor: pointer;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
+
+button:hover
+{
+    background-color: #5a189a;
+}
+
+button:active
+{
+    transform: scale(0.96);
+}
 .header h2{
     text-align: center;
     text-transform: uppercase;
